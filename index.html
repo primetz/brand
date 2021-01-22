@@ -5,9 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brand</title>
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+<div class="container">
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-row">
+                <div class="header-col">
+                    <a href="#" class="logo-link"><img src="img/logo.png" alt="logo" class="logo-img"></a>
+                    <form action="#" class="search-box">
+                        <input type="text" id="search-box" class="search-box__input">
+                        <label for="search-box" class="search-box__label"><i class="fas fa-search"></i></label>
+                        <button type="submit" class="search-box__btn"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="header-col">
+                    <input type="checkbox" id="burger-control" class="burger-check">
+                    <label for="burger-control" class="burger-label">
+                        <span class="burger"></span>
+                    </label>
+                    <img src="img/user.svg" alt="user" class="user">
+                    <div class="shopping-cart" data-count="5">
+                        <img src="img/shopping-cart.svg" alt="shopping cart" class="shopping-cart__img">
+                    </div>
+                    <nav class="nav">
+                        <label for="burger-control" class="burger-close"><i class="fas fa-times"></i></label>
+                        <p class="nav-title">Menu</p>
+                        <ul class="nav-list">
+                            <li class="nav-list-item">
+                                Man
+                                <ul>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-list-item">
+                                Woman
+                                <ul>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-list-item">
+                                Kids
+                                <ul>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="promo">
+        <img src="img/promo.png" alt="brand" class="promo-img">
+        <p class="promo-text">THE BRAND<span class="promo-text_small">OF LUXERIOUS <span
+                class="promo-text_red">FASHION</span></span></p>
+    </div>
+    <div class="offer">
+        <div class="wrapper">
+            <div class="offer__content">
+                <a href="#" class="offer__item" data-offer="30% OFF" data-for="FOR WOMEN">
+                    <img src="img/for-women.jpg" alt="for-women" class="offer__img">
+                </a>
+                <a href="#" class="offer__item" data-offer="HOT DEAL" data-for="FOR MEN">
+                    <img src="img/for-men.jpg" alt="for-men" class="offer__img">
+                </a>
+                <a href="#" class="offer__item" data-offer="NEW ARRIVALS" data-for="FOR KIDS">
+                    <img src="img/for-kids.jpg" alt="for-kids" class="offer__img">
+                </a>
+                <a href="#" class="offer__item" data-offer="LUXIROUS & TRENDY" data-for="ACCESORIES">
+                    <img src="img/accessories.jpg" alt="for-accessories" class="offer__img">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="featured">
+        <div class="wrapper">
+            <h2 class="featured-heading">Fetured Items</h2>
+            <p class="featured-text">Shop for items based on what we featured in this week</p>
+            <ul class="featured-list">
+                <li class="featured-list__item"><a href="#" class="featured-list__link">
+                    <img src="img/featured_1.jpg" alt="featured 1">
+                    <h3 class="title">ELLERY X M'O CAPSULE</h3>
+                    <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <span class="price">&dollar;52.00</span>
+                </a></li>
+                <li class="featured-list__item"><a href="#" class="featured-list__link">
+                    <img src="img/featured_2.jpg" alt="featured 1">
+                    <h3 class="title">ELLERY X M'O CAPSULE</h3>
+                    <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <span class="price">&dollar;52.00</span>
+                </a></li>
+                <li class="featured-list__item"><a href="#" class="featured-list__link">
+                    <img src="img/featured_3.jpg" alt="featured 1">
+                    <h3 class="title">ELLERY X M'O CAPSULE</h3>
+                    <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <span class="price">&dollar;52.00</span>
+                </a></li>
+                <li class="featured-list__item"><a href="#" class="featured-list__link">
+                    <img src="img/featured_4.jpg" alt="featured 1">
+                    <h3 class="title">ELLERY X M'O CAPSULE</h3>
+                    <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <span class="price">&dollar;52.00</span>
+                </a></li>
+                <li class="featured-list__item"><a href="#" class="featured-list__link">
+                    <img src="img/featured_5.jpg" alt="featured 1">
+                    <h3 class="title">ELLERY X M'O CAPSULE</h3>
+                    <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <span class="price">&dollar;52.00</span>
+                </a></li>
+                <li class="featured-list__item"><a href="#" class="featured-list__link">
+                    <img src="img/featured_6.jpg" alt="featured 1">
+                    <h3 class="title">ELLERY X M'O CAPSULE</h3>
+                    <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <span class="price">&dollar;52.00</span>
+                </a></li>
+            </ul>
+            <div class="button">
+                <a href="#" class="button-link">Browse All Product</a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
