@@ -9,3 +9,10 @@ function handler(evt) {
         evt.relatedTarget.style.filter = '';
     }
 }
+
+let cartBtn = document.querySelector('.cart-btn');
+
+cartBtn.onclick = function () {
+    console.log(document.location);
+    document.location = document.location.origin + '/pages/cart.html';
+}
