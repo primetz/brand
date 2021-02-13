@@ -1251,7 +1251,6 @@ body {
 /* cart */
 
 .cart-title {
-    margin-bottom: 96px;
     padding: 60px 230px;
     background-color: #f8f3f4;
 }
@@ -1259,7 +1258,7 @@ body {
 .cart-wrap {
     display: flex;
     justify-content: space-between;
-    padding: 0 230px 128px 230px;
+    padding: 96px 230px 128px 230px;
 }
 
 .cart-list-wrap {
@@ -1506,4 +1505,147 @@ body {
 
 .cart-form-ordering-btn:active {
     background-color: #f16d7f;
+}
+
+/* registration */
+
+.registration-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 230px 96px 230px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 360px;
+}
+
+.registration-form-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 150px;
+    border: none;
+}
+
+.registration-form-item-title {
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.registration-form-item-input {
+    height: 45px;
+    margin-top: 20px;
+    padding: 0 18px;
+    border: 1px solid #a4a4a4;
+    font-family: lato-light, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222;
+}
+
+.registration-form-item-input::placeholder {
+    font-family: lato-light, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.registration-form-item-gender {
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+    border: none;
+}
+
+.registration-form-item-gender-input {
+    margin-right: 10px;
+}
+
+.registration-form-item-gender-label {
+    margin-right: 20px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.registration-form-item-txt {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1;
+}
+
+.registration-form-submit {
+    display: flex;
+    align-items: center;
+    width: 168px;
+    min-height: 50px;
+    margin-top: 40px;
+    padding: 10px 20px 10px 30px;
+    border: none;
+    background-color: #f16d7f;
+    font-family: lato-regular, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.registration-form-submit .registration-form-submit-icon {
+    margin-left: 20px;
+}
+
+.registration-form-submit:hover {
+    background-color: #f892a0;
+}
+
+.registration-form-submit:active {
+    background-color: #f16d7f;
+}
+
+.loyalty {
+    flex-basis: 652px;
+    font-family: lato-light, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.loyalty-title {
+    margin-bottom: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.loyalty-txt {
+    margin-bottom: 22px;
+}
+
+.loyalty-list {
+    padding-left: 42px;
+    list-style: none;
+}
+
+.loyalty-list-item {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.loyalty-list-item:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: -42px;
+    transform: translateY(-50%);
+    background: url("../img/check.svg") no-repeat 50%;
 }
