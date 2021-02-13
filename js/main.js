@@ -1,18 +1,23 @@
-let container = document.querySelector('.products-wrap');
+let productCardButton = document.querySelectorAll('.products-item-button');
 
-container.onmouseover = container.onmouseout = handler;
-
-function handler(evt) {
-    if (evt.type === 'mouseover' && evt.target.className === 'products-item-button' && evt.relatedTarget !== null) {
-        evt.relatedTarget.style.filter = 'brightness(45%)';
-    } else if (evt.type === 'mouseout' && evt.relatedTarget !== "products-item-link" && evt.relatedTarget !== null) {
+productCardButton.forEach(item => {
+    item.onmouseenter = item.onmouseleave = function (evt) {
+        if (evt.target.tagName === 'BUTTON' && evt.relatedTarget.tagName === 'IMG') {
+            evt.relatedTarget.style.filter = 'brightness(45%)';
+        }
+    }
+    item.onmouseleave = item.onmouseleave = function (evt) {
         evt.relatedTarget.style.filter = '';
     }
-}
+});
 
 let cartBtn = document.querySelector('.cart-btn');
+let accountBtn = document.querySelector('.account-btn');
 
 cartBtn.onclick = function () {
-    console.log(document.location);
     document.location = document.location.origin + '/pages/cart.html';
+}
+
+accountBtn.onclick = function () {
+    document.location = document.location.origin + '/pages/registration.html';
 }
