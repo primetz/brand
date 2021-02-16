@@ -15,9 +15,17 @@ let cartBtn = document.querySelector('.cart-btn');
 let accountBtn = document.querySelector('.account-btn');
 
 cartBtn.onclick = function () {
-    document.location = document.location.origin + '/pages/cart.html';
+    if (window.location.origin === 'https://stanislav-rodikov.github.io') {
+        document.location = document.location.origin + '/brand/pages/cart.html';
+    } else {
+        document.location = document.location.origin + '/pages/cart.html';
+    }
 }
 
 accountBtn.onclick = function () {
-    document.location = document.location.origin + '/pages/registration.html';
+    if (window.location.origin === 'https://stanislav-rodikov.github.io') {
+        document.location = document.location.origin + '/brand/pages/registration.html';
+    } else {
+        document.location = document.location.origin + '/pages/registration.html';
+    }
 }
