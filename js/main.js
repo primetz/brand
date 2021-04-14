@@ -1,14 +1,15 @@
-let productCardButton = document.querySelectorAll('.products-item-button');
+'use strict';
 
-productCardButton.forEach(item => {
-    item.onmouseenter = item.onmouseleave = function (evt) {
-        if (evt.target.tagName === 'BUTTON' && evt.relatedTarget.tagName === 'IMG') {
-            evt.relatedTarget.style.filter = 'brightness(45%)';
-        }
-    }
-    item.onmouseleave = item.onmouseleave = function (evt) {
-        evt.relatedTarget.style.filter = '';
-    }
+let productCardButtons = document.querySelectorAll('.products-item-button');
+
+productCardButtons.forEach(item => {
+    item.addEventListener('mouseenter', function () {
+        item.parentNode.querySelector('.products-item-photo').style.filter = 'brightness(45%)';
+    });
+
+    item.addEventListener('mouseleave', function () {
+        item.parentNode.querySelector('.products-item-photo').style.filter = '';
+    });
 });
 
 let cartBtn = document.querySelector('.cart-btn');
