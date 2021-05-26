@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registration</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -42,7 +43,7 @@
                             <ul>
                                 <li><a href="catalog.html">catalog</a></li>
                                 <li><a href="product.html">product</a></li>
-                                <li><a href="cart.html">cart</a></li>
+                                <li><a href="#">cart</a></li>
                                 <li><a href="registration.html">registration</a></li>
                                 <li><a href="#">accessories</a></li>
                                 <li><a href="#">bags</a></li>
@@ -89,54 +90,83 @@
         </div>
     </header>
     <main class="page-main">
-        <section class="registration">
-            <h2 class="breadcrumbs-title cart-title side-fields">registration</h2>
-            <div class="registration-wrap">
-                <form action="#" class="registration-form">
-                    <fieldset class="registration-form-item">
-                        <legend class="registration-form-item-title">Your Name</legend>
-                        <input type="text" placeholder="First Name" class="registration-form-item-input">
-                        <input type="text" placeholder="Last Name" class="registration-form-item-input">
-                    </fieldset>
-                    <fieldset class="registration-form-item-gender">
-                        <input type="radio" id="male" name="gender" class="registration-form-item-gender-input">
-                        <label for="male" class="registration-form-item-gender-label">Male</label>
-                        <input type="radio" id="female" name="gender" class="registration-form-item-gender-input">
-                        <label for="female" class="registration-form-item-gender-label">Female</label>
-                        <input type="radio" id="other" name="gender" class="registration-form-item-gender-input other">
-                        <label for="other" class="registration-form-item-gender-label other">Other</label>
-                    </fieldset>
-                    <fieldset class="registration-form-item">
-                        <legend class="registration-form-item-title">Login details</legend>
-                        <input type="email" placeholder="Email" class="registration-form-item-input">
-                        <input type="password" placeholder="Password" class="registration-form-item-input">
-                        <p class="registration-form-item-txt">Please use 8 or more characters, with at least 1 number
-                            and a mixture of uppercase and lowercase letters</p>
-                    </fieldset>
-                    <button class="registration-form-submit">join now
-                        <svg class="registration-form-submit-icon" width="17" height="10" viewBox="0 0 17 10"
-                             fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"
-                                  fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"
-                                  fill="white"/>
-                        </svg>
-                    </button>
-                </form>
-                <section class="loyalty">
-                    <h2 class="loyalty-title">loyalty has its perks</h2>
-                    <p class="loyalty-txt">Get in on the loyalty program where you can earn points and unlock serious
-                        perks. Starting with these as soon as you join:</p>
-                    <ul class="loyalty-list">
-                        <li class="loyalty-list-item">15&percnt; off welcome offer</li>
-                        <li class="loyalty-list-item">Free shipping, returns and exchanges on all orders</li>
-                        <li class="loyalty-list-item">&dollar; off a purchase on your birthday</li>
-                        <li class="loyalty-list-item">Early access to products</li>
-                        <li class="loyalty-list-item">Exclusive offers &amp; rewards</li>
+        <section class="cart">
+            <h2 class="breadcrumbs-title cart-title side-fields">shopping cart</h2>
+            <div class="cart-wrap">
+                <div class="cart-list-wrap">
+                    <ul class="cart-list">
+                        <li class="cart-list-item">
+                            <img src="../img/cart-product-1.jpg" alt="mango people t-shirt" width="262" height="306"
+                                 class="cart-list-item-img">
+                            <div class="cart-list-item-info">
+                                <h3 class="cart-list-item-info-title">mango people t&nbsp;-&nbsp;shirt</h3>
+                                <ul class="cart-sub-list">
+                                    <li class="cart-sub-list-item">Price:&nbsp;
+                                        <span class="cart-sub-list-item-price">&dollar;300</span>
+                                    </li>
+                                    <li class="cart-sub-list-item">Color:&nbsp;
+                                        <span class="cart-sub-list-item-color">Red</span>
+                                    </li>
+                                    <li class="cart-sub-list-item">Size:&nbsp;
+                                        <span class="cart-sub-list-item-size">xl</span>
+                                    </li>
+                                    <li class="cart-sub-list-item">Quantity:
+                                        <span class="cart-sub-list-item-count">2</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="cart-list-item-btn">
+                                <svg width="18" height="18" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="cart-list-item">
+                            <img src="../img/cart-product-2.jpg" alt="mango people t-shirt" width="262" height="306"
+                                 class="cart-list-item-img">
+                            <div class="cart-list-item-info">
+                                <h3 class="cart-list-item-info-title">mango people t-shirt</h3>
+                                <ul class="cart-sub-list">
+                                    <li class="cart-sub-list-item">Price:&nbsp;
+                                        <span class="cart-sub-list-item-price">&dollar;300</span>
+                                    </li>
+                                    <li class="cart-sub-list-item">Color:&nbsp;
+                                        <span class="cart-sub-list-item-color">Red</span>
+                                    </li>
+                                    <li class="cart-sub-list-item">Size:&nbsp;
+                                        <span class="cart-sub-list-item-size">xi</span>
+                                    </li>
+                                    <li class="cart-sub-list-item">Quantity:
+                                        <span class="cart-sub-list-item-count">2</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="cart-list-item-btn">
+                                <svg width="18" height="18" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z"/>
+                                </svg>
+                            </button>
+                        </li>
                     </ul>
-                </section>
+                    <div class="cart-list-btn-wrap">
+                        <button class="cart-list-btn">clear shopping cart</button>
+                        <button class="cart-list-btn">continue shopping</button>
+                    </div>
+                </div>
+                <form action="#" class="cart-form">
+                    <fieldset class="cart-form-address">
+                        <legend class="cart-form-address-title">shipping address</legend>
+                        <input type="text" placeholder="Bangladesh" required class="cart-form-address-input">
+                        <input type="text" placeholder="State" required class="cart-form-address-input">
+                        <input type="text" placeholder="Postcode / Zip" required class="cart-form-address-input">
+                        <button class="cart-list-btn cart-form-address-btn">get a quote</button>
+                    </fieldset>
+                    <fieldset class="cart-form-ordering">
+                        <span class="cart-form-ordering-subtotal">sub total<span>&dollar;900</span></span>
+                        <span class="cart-form-ordering-grandtotal">grand total<span>&dollar;900</span></span>
+                        <button type="button" class="cart-form-ordering-btn">proceed to checkout</button>
+                    </fieldset>
+                </form>
             </div>
         </section>
     </main>

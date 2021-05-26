@@ -1,0 +1,41 @@
+{
+    "added": [
+        {
+            "id_product": 1,
+            "product_name": "jacket",
+            "time": "May 24th 2021, 10:43 pm"
+        },
+        {
+            "id_product": 6,
+            "product_name": "shirt",
+            "time": "May 24th 2021, 10:43 pm"
+        },
+        {
+            "id_product": 3,
+            "product_name": "shorts",
+            "time": "May 24th 2021, 10:43 pm"
+        },
+        {
+            "id_product": 4,
+            "product_name": "pants",
+            "time": "May 24th 2021, 10:43 pm"
+        },
+        {
+            "id_product": 2,
+            "product_name": "dress",
+            "time": "May 25th 2021, 5:06 pm"
+        },
+        {
+            "id_product": 5,
+            "product_name": "blazer",
+            "time": "May 25th 2021, 5:07 pm"
+        }
+    ],
+    "deleted": [
+        {
+            "id_product": 2,
+            "product_name": "dress",
+            "time": "May 25th 2021, 5:14 pm"
+        }
+    ]
+}

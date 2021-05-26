@@ -15,13 +15,13 @@ productCardButtons.forEach(item => {
 let cartBtn = document.querySelector('.cart-btn');
 let accountBtn = document.querySelector('.account-btn');
 
-cartBtn.onclick = function () {
-    if (window.location.origin === 'https://stanislav-rodikov.github.io') {
-        document.location = document.location.origin + '/brand/pages/cart.html';
-    } else {
-        document.location = document.location.origin + '/pages/cart.html';
-    }
-}
+// cartBtn.onclick = function () {
+//     if (window.location.origin === 'https://stanislav-rodikov.github.io') {
+//         document.location = document.location.origin + '/brand/pages/cart.html';
+//     } else {
+//         document.location = document.location.origin + '/pages/cart.html';
+//     }
+// }
 
 accountBtn.onclick = function () {
     if (window.location.origin === 'https://stanislav-rodikov.github.io') {
