@@ -1,4 +1,7 @@
-'use strict';
+import filter_products from "./FilterComponent";
+import cart from "./CartComponent";
+import products from "./ProductsComponent";
+import error from "./ErrorComponent";
 
 const app = new Vue({
     el: '#app',

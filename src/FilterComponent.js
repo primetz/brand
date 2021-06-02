@@ -1,5 +1,3 @@
-'use strict';
-
 const filter_products = {
     data() {
         return {
@@ -15,3 +13,5 @@ const filter_products = {
                    <input v-model="filter" type="search" id="search-btn" placeholder="Site search" class="page-header-search-input" tabindex="2">
                </form>`
 };
+
+export default filter_products;
