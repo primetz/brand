@@ -1,5 +1,3 @@
-'use strict';
-
 const error = {
     data() {
         return {
@@ -12,3 +10,5 @@ const error = {
                    <button @click="errorToFetch=!errorToFetch" class="error__close">&times;</button>
                </div>`
 };
+
+export default error;

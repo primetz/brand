@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector(".account-btn").onclick=function(){"https://stanislav-rodikov.github.io"===window.location.origin?document.location=document.location.origin+"/brand/pages/registration.html":document.location=document.location.origin+"/pages/registration.html"}})();
